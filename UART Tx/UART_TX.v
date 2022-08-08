@@ -1,4 +1,4 @@
-`include "CONFIG_MACROS"
+`include "CONFIG_MACROS.v"
 
 module UART_TX (input wire Data_Valid,
                 input wire CLK,
