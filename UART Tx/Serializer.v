@@ -1,3 +1,5 @@
+`include "CONFIG_MACROS.v"
+
 module Serializer (input wire CLK,
                    input wire [7:0] P_DATA,
                    input wire ser_en,

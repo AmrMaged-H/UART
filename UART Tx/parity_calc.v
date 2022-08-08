@@ -1,4 +1,6 @@
-module parity_calc (input wire [7:0] P_DATA,
+`include "CONFIG_MACROS.v"
+
+module parity_calc (input wire [`WIDTH-1:0] P_DATA,
                     input wire parity_type,
                     input wire Data_Valid,
                     input wire CLK,

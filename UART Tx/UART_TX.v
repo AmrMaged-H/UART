@@ -1,7 +1,9 @@
+`include "CONFIG_MACROS"
+
 module UART_TX (input wire Data_Valid,
                 input wire CLK,
                 input wire parity_enable,
-                input wire [7:0] P_DATA,
+                input wire [`WIDTH-1:0] P_DATA,
                 input wire RST,
                 input wire parity_type,
                 output wire busy,

@@ -10,6 +10,8 @@
  
  */
 
+`include "CONFIG_MACROS.v"
+
 module FSM (input wire Data_Valid,
             input wire CLK,
             input wire parity_enable,
