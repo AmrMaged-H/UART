@@ -64,3 +64,5 @@ run
 #    Time: 13714 ps  Iteration: 0  Instance: /UART_RX_TB
 # 1
 # Break in Module UART_RX_TB at ./UART_RX_TB.v line 168
+# End time: 13:47:36 on Aug 09,2022, Elapsed time: 0:01:57
+# Errors: 0, Warnings: 0
