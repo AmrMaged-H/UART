@@ -54,17 +54,6 @@ module FSM (input wire CLK,
         else
             PS <= NS;
     end
-    
-    /////////////////////////////////////////////////////////////////////////////////////////////
-    /////////////////////////////////// Switch State Logic //////////////////////////////////////
-    /////////////////////////////////////////////////////////////////////////////////////////////
-    
-    // --> We Need To Control Evaluating The NS at The Suitable Cycle Which is The
-    // The Last Cycle of the Rx CLK --> edge_cnt = 7 (for Prescale = 8)
-    
-    wire Switch_State;
-    
-    assign Switch_State = (edge_cnt == (Prescale - 1));
 
     /////////////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////// Edge Count Enable //////////////////////////////////////
@@ -108,23 +97,23 @@ module FSM (input wire CLK,
             end
             
             DATA : begin
-                if (PAR_EN && Switch_State && bit_cnt == `WIDTH)
+                if (PAR_EN && edge_cnt == (Prescale - 1) && bit_cnt == `WIDTH)
                     NS = PARITY;
-                else if (Switch_State && bit_cnt == `WIDTH)
+                else if (edge_cnt == (Prescale - 1) && bit_cnt == `WIDTH)
                     NS = STOP;
                 else
                     NS = DATA;
             end
             
             PARITY : begin
-                if (Switch_State)
+                if (edge_cnt == (Prescale - 1))
                     NS = STOP;
                 else
                     NS = PARITY;
             end
             
             STOP : begin           
-                if (Switch_State) 
+                if (edge_cnt == (Prescale - 1)) 
                     NS = IDLE;
                 else
                     NS = STOP;
@@ -144,12 +133,12 @@ module FSM (input wire CLK,
 
     assign LastSample_Cycle = Prescale >> 1;
         
-    assign par_chk_en = ((PS == PARITY) && (edge_cnt == LastSample_Cycle+1)) ? 1'b1 : 1'b0;
+    assign par_chk_en = ((PS == PARITY) && (edge_cnt == LastSample_Cycle+2)) ? 1'b1 : 1'b0;
         
         // And The Same Procedure Can Be Applied For the Other Flags ...
         
-    assign strt_chk_en = ((PS == START) && (edge_cnt == LastSample_Cycle+1)) ? 1'b1 : 1'b0;
-    assign stp_chk_en  = ((PS == STOP) && (edge_cnt == LastSample_Cycle+1))  ? 1'b1 : 1'b0;
+    assign strt_chk_en = ((PS == START) && (edge_cnt == LastSample_Cycle+2)) ? 1'b1 : 1'b0;
+    assign stp_chk_en  = ((PS == STOP) && (edge_cnt == LastSample_Cycle+2))  ? 1'b1 : 1'b0;
         
         
     /////////////////////////////////////////////////////////////////////////////////////////////

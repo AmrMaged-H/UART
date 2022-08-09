@@ -1,7 +1,7 @@
 # OpenFile ./UART_RX_TB.v
 vsim work.UART_RX_TB
 # vsim work.UART_RX_TB 
-# Start time: 01:24:20 on Jul 27,2022
+# Start time: 13:45:39 on Aug 09,2022
 # Loading work.UART_RX_TB
 # Loading work.UART_RX
 # Loading work.FSM
@@ -64,5 +64,3 @@ run
 #    Time: 13714 ps  Iteration: 0  Instance: /UART_RX_TB
 # 1
 # Break in Module UART_RX_TB at ./UART_RX_TB.v line 168
-# End time: 01:35:08 on Jul 27,2022, Elapsed time: 0:10:48
-# Errors: 0, Warnings: 0

@@ -9,25 +9,25 @@ z2
 cModel Technology
 Z0 dD:/Digital Electronics/Projects/UART/UART Rx
 vdata_sampler
-!s110 1658877787
+!s110 1660045349
 !i10b 1
 !s100 __FzR<mfgUfjA]=H;bigN1
 INF@:=@B;Xb]4RAA6B;L[91
 Z1 VDg1SIo80bB@j0V0VzS_@n1
-R0
+Z2 dD:/Digital Electronics/Projects/UART Repo/UART/UART Rx
 w1658241441
 8.\data_sampler.v
 F.\data_sampler.v
 L0 3
-Z2 OV;L;10.5b;63
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1658877787.000000
+!s108 1660045348.000000
 !s107 CONFIG_MACROS.v|.\data_sampler.v|
 !s90 .\data_sampler.v|
 !i113 1
-Z3 tCvgOpt 0
+Z4 tCvgOpt 0
 vdeserializer
 !s110 1658877792
 !i10b 1
@@ -39,7 +39,7 @@ w1658854265
 8.\deserializer.v
 F.\deserializer.v
 L0 3
-R2
+R3
 r1
 !s85 0
 31
@@ -47,47 +47,47 @@ r1
 !s107 CONFIG_MACROS.v|.\deserializer.v|
 !s90 .\deserializer.v|
 !i113 1
-R3
+R4
 vedge_bit_counter
-!s110 1658877799
+!s110 1660045355
 !i10b 1
 !s100 CZ@5g4>JKd`ogKY>ikmfk3
 IPD9lkdiF^7OJm4e_dHINn3
 R1
-R0
+R2
 w1658851406
 8.\edge_bit_counter.v
 F.\edge_bit_counter.v
 L0 3
-R2
+R3
 r1
 !s85 0
 31
-!s108 1658877799.000000
+!s108 1660045355.000000
 !s107 CONFIG_MACROS.v|.\edge_bit_counter.v|
 !s90 .\edge_bit_counter.v|
 !i113 1
-R3
+R4
 vFSM
-!s110 1658877804
+!s110 1660045522
 !i10b 1
-!s100 Fd]IeJhYa]cCNOd>S?nK@2
-I:@dKkP7XNcKOX>ik6MAmg3
+!s100 97mbFk>dI8iVIlOKL0fMM0
+IQP=RZQWJl17nG7:Z_^W_k1
 R1
-R0
-w1658877752
-Z4 8.\FSM.v
-Z5 F.\FSM.v
-L0 19
 R2
+w1660045503
+Z5 8.\FSM.v
+Z6 F.\FSM.v
+L0 19
+R3
 r1
 !s85 0
 31
-!s108 1658877804.000000
-Z6 !s107 CONFIG_MACROS.v|.\FSM.v|
+!s108 1660045522.000000
+!s107 CONFIG_MACROS.v|.\FSM.v|
 Z7 !s90 .\FSM.v|
 !i113 1
-R3
+R4
 n@f@s@m
 vmoduleName
 !s110 1658248231
@@ -97,118 +97,118 @@ I:DmG?jYCegZ8F<Oj?=lV91
 R1
 R0
 w1658243140
-R4
 R5
+R6
 L0 12
-R2
+R3
 r1
 !s85 0
 31
 !s108 1658248231.000000
-R6
+!s107 CONFIG_MACROS.v|.\FSM.v|
 R7
 !i113 1
-R3
+R4
 nmodule@name
 vparity_check
-!s110 1658877810
+!s110 1660045384
 !i10b 1
 !s100 4Q4nblUn4:PY;b3e<kSXS2
 ILVZO84[EcoBH]GR5]g^7P3
 R1
-R0
+R2
 w1658265518
 8.\parity_check.v
 F.\parity_check.v
 L0 3
-R2
+R3
 r1
 !s85 0
 31
-!s108 1658877810.000000
+!s108 1660045384.000000
 !s107 CONFIG_MACROS.v|.\parity_check.v|
 !s90 .\parity_check.v|
 !i113 1
-R3
+R4
 vstp_check
-!s110 1658877815
+!s110 1660045391
 !i10b 1
 !s100 P8=Kl4X8aAX;k?F47A3fV3
 ILhZIWA4`<78FCC==VXeSh3
 R1
-R0
+R2
 w1658243663
 8.\stp_check.v
 F.\stp_check.v
 L0 1
-R2
+R3
 r1
 !s85 0
 31
-!s108 1658877815.000000
+!s108 1660045391.000000
 !s107 .\stp_check.v|
 !s90 .\stp_check.v|
 !i113 1
-R3
+R4
 vstrt_check
-!s110 1658877820
+!s110 1660045400
 !i10b 1
 !s100 P`Z`i>4B_:h1EY05`I8h@0
 IT0He]5kOZZfA<blk?zk=Q0
 R1
-R0
+R2
 w1658877709
 8.\strt_check.v
 F.\strt_check.v
 L0 1
-R2
+R3
 r1
 !s85 0
 31
-!s108 1658877820.000000
+!s108 1660045400.000000
 !s107 .\strt_check.v|
 !s90 .\strt_check.v|
 !i113 1
-R3
+R4
 vUART_RX
-!s110 1658877828
+!s110 1660045421
 !i10b 1
 !s100 8c[E[7ld@TeEcdbGAiIU@0
 I@<bDQmEHCnVKgGXnk4:[R1
 R1
-R0
+R2
 w1658877729
 8.\UART_RX.v
 F.\UART_RX.v
 L0 3
-R2
+R3
 r1
 !s85 0
 31
-!s108 1658877828.000000
+!s108 1660045421.000000
 !s107 CONFIG_MACROS.v|.\UART_RX.v|
 !s90 .\UART_RX.v|
 !i113 1
-R3
+R4
 n@u@a@r@t_@r@x
 vUART_RX_TB
-!s110 1658877836
+!s110 1660045415
 !i10b 1
 !s100 UMbBKg[oEbP_oE2ZKL;]Z3
 IN9H0zaz71hSmdD44V0BC:3
 R1
-R0
+R2
 w1658877079
 8.\UART_RX_TB.v
 F.\UART_RX_TB.v
 L0 3
-R2
+R3
 r1
 !s85 0
 31
-!s108 1658877836.000000
+!s108 1660045413.000000
 !s107 CONFIG_MACROS.v|.\UART_RX_TB.v|
 !s90 .\UART_RX_TB.v|
 !i113 1
-R3
+R4
 n@u@a@r@t_@r@x_@t@b
