@@ -1,6 +1,4 @@
-module strt_check (input wire CLK,
-                   input wire RST,
-                   input wire strt_chk_en,
+module strt_check (input wire strt_chk_en,
                    input wire sampled_bit,
                    output reg strt_glitch);
 

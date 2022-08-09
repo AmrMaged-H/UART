@@ -71,8 +71,6 @@ module UART_RX (input wire CLK,
     /////////////////////////////////////////////////////////////////////////////////////////////
     
     strt_check strt_check_Module (
-    .CLK(CLK),
-    .RST(RST),
     .strt_chk_en(strt_chk_en_int),
     .sampled_bit(sampled_bit_int),
     .strt_glitch(strt_glitch_int)
