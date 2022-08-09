@@ -56,10 +56,10 @@ module UART_TX (input wire Data_Valid,
     
     parity_calc Parity_Calc_Module (
     
-    .P_DATA,
-    .parity_type,
-    .Data_Valid,
-    .CLK,
+    .P_DATA(P_DATA),
+    .parity_type(parity_type),
+    .Data_Valid(Data_Valid),
+    .CLK(CLK),
     
     .par_bit(par_bit_int)
     
