@@ -16,25 +16,25 @@ Functionality:
 
 `include "CONFIG_MACROS.v"
 
-module FSM (input wire CLK,
-            input wire RST,
-            input wire RX_IN,
-            input wire PAR_EN,
-            input wire par_err,
-            input wire strt_glitch,
-            input wire stp_err,
-            input wire [`BIT_COUNTER_WIDTH-1:0] bit_cnt,
-            input wire [4:0] edge_cnt,
-            input wire [4:0] Prescale,
+module RX_FSM  (input wire CLK,
+                input wire RST,
+                input wire RX_IN,
+                input wire PAR_EN,
+                input wire par_err,
+                input wire strt_glitch,
+                input wire stp_err,
+                input wire [`BIT_COUNTER_WIDTH-1:0] bit_cnt,
+                input wire [4:0] edge_cnt,
+                input wire [4:0] Prescale,
 
-            output wire par_chk_en,
-            output wire strt_chk_en,
-            output wire stp_chk_en,
-            output reg Data_Valid,
-            output wire deser_en,
-            output reg edge_count_en,
-            output reg data_sample_en,
-            output reg StartTransition);
+                output wire par_chk_en,
+                output wire strt_chk_en,
+                output wire stp_chk_en,
+                output reg Data_Valid,
+                output wire deser_en,
+                output reg edge_count_en,
+                output reg data_sample_en,
+                output reg StartTransition);
     
     /////////////////////////////////////////////////////////////////////////////////////////////
     ///////////////////////////////////// State Encoding ////////////////////////////////////////

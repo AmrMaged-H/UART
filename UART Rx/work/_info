@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dD:/Digital Electronics/Projects/UART/UART Rx
 vdata_sampler
-!s110 1660045349
+!s110 1660227345
 !i10b 1
-!s100 __FzR<mfgUfjA]=H;bigN1
-INF@:=@B;Xb]4RAA6B;L[91
+!s100 ^c_GXdVJi=DJZK;UVW=3[2
+If3JK1P4IC@`DQ:0LMXAPE2
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dD:/Digital Electronics/Projects/UART Repo/UART/UART Rx
-w1658241441
+w1660227326
 8.\data_sampler.v
 F.\data_sampler.v
 L0 3
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1660045348.000000
+!s108 1660227344.000000
 !s107 CONFIG_MACROS.v|.\data_sampler.v|
 !s90 .\data_sampler.v|
 !i113 1
@@ -78,14 +78,14 @@ R2
 w1660045503
 Z5 8.\FSM.v
 Z6 F.\FSM.v
-L0 19
+Z7 L0 19
 R3
 r1
 !s85 0
 31
 !s108 1660045522.000000
-Z7 !s107 CONFIG_MACROS.v|.\FSM.v|
-Z8 !s90 .\FSM.v|
+Z8 !s107 CONFIG_MACROS.v|.\FSM.v|
+Z9 !s90 .\FSM.v|
 !i113 1
 R4
 n@f@s@m
@@ -105,8 +105,8 @@ r1
 !s85 0
 31
 !s108 1658248231.000000
-R7
 R8
+R9
 !i113 1
 R4
 nmodule@name
@@ -130,6 +130,27 @@ r1
 !s90 .\parity_check.v|
 !i113 1
 R4
+vRX_FSM
+!s110 1660227356
+!i10b 1
+!s100 eXbBMboEH9^A9_OBTOl600
+InjD5X^4EBB[6dM0V=ZT7A1
+R1
+R2
+w1660227215
+8.\RX_FSM.v
+F.\RX_FSM.v
+R7
+R3
+r1
+!s85 0
+31
+!s108 1660227356.000000
+!s107 CONFIG_MACROS.v|.\RX_FSM.v|
+!s90 .\RX_FSM.v|
+!i113 1
+R4
+n@r@x_@f@s@m
 vstp_check
 !s110 1660045391
 !i10b 1
@@ -171,13 +192,13 @@ r1
 !i113 1
 R4
 vUART_RX
-!s110 1660066533
+!s110 1660227365
 !i10b 1
-!s100 =GDIWdTI2;=8eNja?`JQk3
-IUXoV0S9d_o8@<P8bX<OFC0
+!s100 Kb1D:;=K7aJl^mYna`ZWl3
+IizXc1iE>5c^PRSglbZN7k0
 R1
 R2
-w1660066483
+w1660227231
 8.\UART_RX.v
 F.\UART_RX.v
 L0 3
@@ -185,7 +206,7 @@ R3
 r1
 !s85 0
 31
-!s108 1660066533.000000
+!s108 1660227365.000000
 !s107 CONFIG_MACROS.v|.\UART_RX.v|
 !s90 .\UART_RX.v|
 !i113 1
