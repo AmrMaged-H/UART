@@ -12,15 +12,15 @@
 
 `include "CONFIG_MACROS.v"
 
-module FSM (input wire Data_Valid,
-            input wire CLK,
-            input wire parity_enable,
-            input wire ser_done,
-            input wire RST,
+module TX_FSM  (input wire Data_Valid,
+                input wire CLK,
+                input wire parity_enable,
+                input wire ser_done,
+                input wire RST,
 
-            output wire ser_en,
-            output reg busy,
-            output reg [1:0] mux_sel);
+                output wire ser_en,
+                output reg busy,
+                output reg [1:0] mux_sel);
     
     /////////////////////////////////////////////////////////////////////////////////
     ///////////////////////////////// State Encoding ////////////////////////////////

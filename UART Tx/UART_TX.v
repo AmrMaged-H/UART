@@ -15,7 +15,7 @@ module UART_TX (input wire Data_Valid,
     wire par_bit_int;
     wire [1:0] mux_sel_int;
     
-    FSM FSM_Module (
+    TX_FSM FSM_Module (
     
     .Data_Valid(Data_Valid),
     .CLK(CLK),

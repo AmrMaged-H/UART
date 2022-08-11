@@ -18,8 +18,8 @@ Z2 dD:/Digital Electronics/Projects/UART Repo/UART/UART Tx
 w1659980447
 8.\FSM.v
 F.\FSM.v
-L0 15
-Z3 OV;L;10.5b;63
+Z3 L0 15
+Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
@@ -27,7 +27,7 @@ r1
 !s107 CONFIG_MACROS.v|.\FSM.v|
 !s90 .\FSM.v|
 !i113 1
-Z4 tCvgOpt 0
+Z5 tCvgOpt 0
 n@f@s@m
 vmux
 !s110 1659980470
@@ -40,7 +40,7 @@ w1658165913
 8.\mux.v
 F.\mux.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
@@ -48,7 +48,7 @@ r1
 !s107 .\mux.v|
 !s90 .\mux.v|
 !i113 1
-R4
+R5
 vMUX
 !s110 1658164494
 !i10b 1
@@ -60,7 +60,7 @@ w1658164476
 8.\MUX.v
 F.\MUX.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
@@ -68,7 +68,7 @@ r1
 !s107 .\MUX.v|
 !s90 .\MUX.v|
 !i113 1
-R4
+R5
 n@m@u@x
 vParity_Calc
 !s110 1658163757
@@ -81,7 +81,7 @@ w1658157266
 8.\Parity_Calc.v
 F.\Parity_Calc.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
@@ -89,7 +89,7 @@ r1
 !s107 .\Parity_Calc.v|
 !s90 .\Parity_Calc.v|
 !i113 1
-R4
+R5
 n@parity_@calc
 vparity_calc
 !s110 1660045726
@@ -102,7 +102,7 @@ w1660045700
 8.\parity_calc.v
 F.\parity_calc.v
 L0 3
-R3
+R4
 r1
 !s85 0
 31
@@ -110,7 +110,7 @@ r1
 !s107 CONFIG_MACROS.v|.\parity_calc.v|
 !s90 .\parity_calc.v|
 !i113 1
-R4
+R5
 vSerializer
 !s110 1659980477
 !i10b 1
@@ -122,7 +122,7 @@ w1659980238
 8.\Serializer.v
 F.\Serializer.v
 L0 3
-R3
+R4
 r1
 !s85 0
 31
@@ -130,7 +130,7 @@ r1
 !s107 CONFIG_MACROS.v|.\Serializer.v|
 !s90 .\Serializer.v|
 !i113 1
-R4
+R5
 n@serializer
 vserializer
 !s110 1658163856
@@ -143,7 +143,7 @@ w1658163850
 8.\serializer.v
 F.\serializer.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
@@ -151,27 +151,48 @@ r1
 !s107 .\serializer.v|
 !s90 .\serializer.v|
 !i113 1
-R4
-vUART_TX
-!s110 1660055592
+R5
+vTX_FSM
+!s110 1660228185
 !i10b 1
-!s100 oIWM>OH>VJ[@0bR8^];[c3
-IbPZ36UgLLc`:^bFMKjPQd0
+!s100 6Xl:U;z0D8@INKFmRk^o`1
+I:FmBcnN5JdRKgNec8d5J41
 R1
 R2
-w1660055587
-8.\UART_TX.v
-F.\UART_TX.v
-L0 3
+w1660228163
+8.\TX_FSM.v
+F.\TX_FSM.v
 R3
+R4
 r1
 !s85 0
 31
-!s108 1660055592.000000
+!s108 1660228185.000000
+!s107 CONFIG_MACROS.v|.\TX_FSM.v|
+!s90 .\TX_FSM.v|
+!i113 1
+R5
+n@t@x_@f@s@m
+vUART_TX
+!s110 1660228181
+!i10b 1
+!s100 EmSOTCflQN<9E<_Qa9;;30
+In3dg6>PVSR7zTP]gO8:Sj1
+R1
+R2
+w1660228170
+8.\UART_TX.v
+F.\UART_TX.v
+L0 3
+R4
+r1
+!s85 0
+31
+!s108 1660228180.000000
 !s107 CONFIG_MACROS.v|.\UART_TX.v|
 !s90 .\UART_TX.v|
 !i113 1
-R4
+R5
 n@u@a@r@t_@t@x
 vUART_TX_Top
 !s110 1658164522
@@ -184,7 +205,7 @@ w1658164516
 8.\UART_TX_Top.v
 F.\UART_TX_Top.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
@@ -192,5 +213,5 @@ r1
 !s107 .\UART_TX_Top.v|
 !s90 .\UART_TX_Top.v|
 !i113 1
-R4
+R5
 n@u@a@r@t_@t@x_@top
